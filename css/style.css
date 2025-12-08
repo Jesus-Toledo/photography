@@ -1,0 +1,154 @@
+:root {
+  /* Fondo */
+  --color-bg: #F5F6F7;  
+
+  /* Texto */
+  --color-text: #2A2D34;  
+  --color-text-light: #6F7277;
+
+  /* Botones */
+  --color-primary: #1A73E8;  
+  --color-primary-hover: #1666CC;
+  --color-link: #4B8DF7;
+
+  --white: #FFFFFF;
+}
+
+/**Reset*/
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /* quitar las viñetas por defecto */
+  ol, ul {
+    list-style: none;
+  }
+  /*  imágenes responsivas */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+  }
+  .container {
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .btn {
+    padding: 12px 28px;
+    background-color: var(--color-primary); 
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+  }
+  .btn:active {
+    transform: translateY(0);
+    background-color: var(--color-link);
+  }
+
+
+  /**    header section   */
+
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+  }
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+  }
+  .logo {
+    font-size: 2.3rem;
+    color: var(--white);
+    text-decoration: none;
+  }
+  .nav__toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    & span {
+        font-size: 32px;
+        color: var(--white);
+        line-height: 1; 
+    }
+  }
+  .nav {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: var(--color-text-light);
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: max-height .35s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        & ul {
+            padding: 20px 0;
+            margin: 0;
+
+            & li{
+                text-align: center;
+                margin: 0;
+                padding: 15px;
+                transition: background-color .3s easy;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+
+            & li:last-child {
+                margin-bottom: 0;
+            }
+        }
+        & a{
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: var(--white);
+            font-weight: 500;
+            transition: color 0.3s;
+
+            &:hover {
+                color: var(--color-primary-hover);
+            }
+        }
+  }
+  .nav.open {
+    max-height: 50vh;
+  }
+  
