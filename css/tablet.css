@@ -2,4 +2,6 @@
     .container {
         padding: 0 50px;
     }
+    .hero__mobile { display: none; }
+    .hero__tablet { display: block; }
 }

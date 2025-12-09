@@ -36,4 +36,8 @@
         padding-top: 100px;
         gap: 10px;
     }
+
+    /** hero section */
+    .hero__tablet { display: none; }
+    .hero__desktop { display: block; }
 }
