@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Toledoplay</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -13,47 +14,82 @@
 </head>
 <body>
     <header class="header">
-        <div class="container nav__container">
-            <span class="material-symbols-outlined logo">
-                camera
-                </span>
-            <button class="nav__toggle" id="nav__toggle">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-            <div class="nav" id="nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container nav__container">
+        <span class="material-symbols-outlined logo">camera</span>
+  
+        <button class="nav__toggle" id="nav__toggle">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+  
+        <div class="nav" id="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
+      </div>
     </header>
-
-    <!--    Hero section  -->
-    <section class="hero hero__mobile">
-        <img src="images/hero-mobile.jpg" class="hero__img">
-        <div class="container">
-            <div class="hero__text"><h2>“Every moment tells its own story.”</h2></div>
-        </div>
-      </section>
+  
+    <!-- HERO -->
+    <section class="hero">
+      <picture>
+        <!-- Desktop -->
+        <source srcset="images/hero-desktop.jpg" media="(min-width: 1024px)">
+        <!-- Tablet -->
+        <source srcset="images/hero-tablet.jpg" media="(min-width: 768px)">
+        <!-- Mobile -->
+        <img src="images/hero-mobile.jpg" alt="Fotografía profesional" class="hero__img">
+      </picture>
       
-      <section class="hero hero__tablet">
-        <img src="images/hero-table.jpg" class="hero__img">
-        <div class="container">
-            <div class="hero__text"><h2>“Light writes what words cannot.”</h2></div>
+      <div class="container">
+        <div class="hero__text">
+          <!-- Frase para Mobile -->
+          <h2 class="hero__quote mobile">"Every moment tells its own story."</h2>
+          <!-- Frase para Tablet -->
+          <h2 class="hero__quote tablet">"Light writes what words cannot."</h2>
+          <!-- Frase para Desktop -->
+          <h2 class="hero__quote desktop">"Every photograph is a story suspended in time."</h2>
         </div>
-      </section>
-      
-      <section class="hero hero__desktop">
-        <img src="images/hero-desktop.jpg" class="hero__img">
-        <div class="container">
-            <div class="hero__text"><h2>“Every photograph is a story suspended in time.”</h2></div>
-        </div>
-      </section>
-    
-
+      </div>
+    </section>
+  
+    <footer class="footer">
+      <a href="https://www.instagram.com/tu_usuario" 
+         target="_blank" class="instagram__btn">
+        <svg viewBox="0 0 448 512" class="instagram-icon">
+          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 
+          114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 
+          141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 
+          74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 
+          74.7zm146.4-194.3c0 14.9-12 26.9-26.9 
+          26.9s-26.9-12-26.9-26.9 12-26.9 
+          26.9-26.9 26.9 12 26.9 
+          26.9zm76.1 27.2c-.2-35.2-9.9-66.5-36.2-92.7C384 
+          44 352.7 34.3 317.5 34.1c-35.3-.2-140.7-.2-176 
+          0C106.2 34.3 74.9 44 49 69.9 22.7 96.1 13 
+          127.4 12.8 162.6c-.2 35.3-.2 140.7 0 
+          176 0 35.2 9.7 66.5 36 92.8 26.2 26.3 57.5 
+          36 92.7 36.2 35.3.2 140.7.2 176 
+          0 35.2 0 66.5-9.7 92.8-36 
+          26.3-26.2 36-57.5 
+          36.2-92.7.2-35.3.2-140.8 
+          0-176zm-48.5 216c-7.8 
+          19.6-23 34.7-42.6 
+          42.5-29.5 11.7-99.5 
+          9-132.3 9s-102.7 2.6-132.3-9c-19.6-7.8-34.7-23-42.5-42.6-11.7-29.5-9-99.5-9-132.3s-2.6-102.7 
+          9-132.3c7.8-19.6 23-34.7 
+          42.6-42.5C104.3 70.7 174.3 
+          73.3 207.1 73.3s102.7-2.6 
+          132.3 9c19.6 7.8 34.7 23 
+          42.5 42.6 11.7 29.5 9 
+          99.5 9 132.3s2.7 102.8-9 
+          132.4z"/>
+        </svg>
+      </a>
+    </footer>
+  
     <script src="javascript/menu.js"></script>
-</body>
+  </body>
 </html>

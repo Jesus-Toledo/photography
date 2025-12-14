@@ -1,7 +1,52 @@
-@media (min-width: 600px){
+@media (min-width: 700px){
     .container {
         padding: 0 50px;
     }
-    .hero__mobile { display: none; }
-    .hero__tablet { display: block; }
+
+    .hero {
+        height: 80vh;
+        max-height: 800px;
+      }
+      
+      /* Ocultar menú hamburguesa y mostrar menú horizontal */
+      .nav__toggle {
+        display: none;
+      }
+      
+      .nav {
+        position: static;
+        max-height: none;
+        background: transparent;
+        width: auto;
+      }
+      
+      .nav ul {
+        display: flex;
+        gap: 30px;
+      }
+      
+      .nav a {
+        color: var(--white);
+        font-weight: 500;
+        transition: opacity 0.3s;
+      }
+      
+      .nav a:hover {
+        opacity: 0.8;
+      }
+      
+      /* Cambiar frase en tablet */
+      .hero__quote.mobile,
+      .hero__quote.desktop {
+        display: none;
+      }
+      
+      .hero__quote.tablet {
+        display: block;
+        font-size: 2rem;
+      }
+      
+      .hero__text {
+        padding: 0 40px;
+      }
 }

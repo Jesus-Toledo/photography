@@ -29,15 +29,24 @@
     .nav__toggle {
         display: none;
     }
-    .hero__content {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        padding-top: 100px;
-        gap: 10px;
-    }
-
-    /** hero section */
-    .hero__tablet { display: none; }
-    .hero__desktop { display: block; }
+    .hero {
+        height: 85vh;
+        max-height: 900px;
+      }
+      
+      /* Cambiar frase en desktop */
+      .hero__quote.mobile,
+      .hero__quote.tablet {
+        display: none;
+      }
+      
+      .hero__quote.desktop {
+        display: block;
+        font-size: 2.5rem;
+        line-height: 1.2;
+      }
+      
+      .hero__text {
+        max-width: 900px;
+      }
 }
