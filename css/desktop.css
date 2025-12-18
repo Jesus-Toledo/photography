@@ -19,7 +19,7 @@
 
         & ul {
             display: flex;
-            gap: 5px;
+            gap: 30px;
 
             & li {
                 margin: 0;
@@ -30,8 +30,7 @@
         display: none;
     }
     .hero {
-        height: 85vh;
-        max-height: 900px;
+        flex: 1;
       }
       
       /* Cambiar frase en desktop */

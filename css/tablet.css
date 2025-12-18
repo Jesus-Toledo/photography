@@ -4,8 +4,7 @@
     }
 
     .hero {
-        height: 80vh;
-        max-height: 800px;
+        flex: 1;
       }
       
       /* Ocultar menú hamburguesa y mostrar menú horizontal */

@@ -33,27 +33,24 @@
     </header>
   
     <!-- HERO -->
-    <section class="hero">
-      <picture>
-        <!-- Desktop -->
-        <source srcset="images/hero-desktop.jpg" media="(min-width: 1024px)">
-        <!-- Tablet -->
-        <source srcset="images/hero-tablet.jpg" media="(min-width: 768px)">
-        <!-- Mobile -->
-        <img src="images/hero-mobile.jpg" alt="Fotografía profesional" class="hero__img">
-      </picture>
-      
-      <div class="container">
-        <div class="hero__text">
-          <!-- Frase para Mobile -->
-          <h2 class="hero__quote mobile">"Every moment tells its own story."</h2>
-          <!-- Frase para Tablet -->
-          <h2 class="hero__quote tablet">"Light writes what words cannot."</h2>
-          <!-- Frase para Desktop -->
-          <h2 class="hero__quote desktop">"Every photograph is a story suspended in time."</h2>
+    <main class="main">
+      <section class="hero">
+        <picture class="hero__media">
+          <source srcset="images/hero-desktop.jpg" media="(min-width: 1024px)">
+          <source srcset="images/hero-tablet.jpg" media="(min-width: 768px)">
+          <img src="images/hero-mobile.jpg" alt="Fotografía profesional" class="hero__img">
+        </picture>
+    
+        <div class="container hero__content">
+          <div class="hero__text">
+            <h2 class="hero__quote mobile">"Every moment tells its own story."</h2>
+            <h2 class="hero__quote tablet">"Light writes what words cannot."</h2>
+            <h2 class="hero__quote desktop">"Every photograph is a story suspended in time."</h2>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
   
     <footer class="footer">
       <a href="https://www.instagram.com/tu_usuario" 
