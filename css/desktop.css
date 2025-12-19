@@ -48,4 +48,37 @@
       .hero__text {
         max-width: 900px;
       }
+
+      /*-------------------------------about page------------------------------**/
+
+      .about {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+      }
+      .about__img {
+        flex: 1;
+        max-width: 480px;
+      }
+      .about__me {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .about__text {
+        gap: 18px;
+
+        & p {
+          max-width: 55ch;
+        }
+      }
+      .about h2 {
+        margin-bottom: 12px;
+      }
+
+      .btn {
+        padding: 12px 70px;
+        align-self: center;
+      }
 }

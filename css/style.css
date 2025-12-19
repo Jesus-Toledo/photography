@@ -49,6 +49,30 @@ body {
   min-height: 100vh;
 }
 
+.btn {
+  align-items: flex-start;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 0.95rem;
+  padding: 10px 18px;
+  color: var(--white);
+  background-color: var(--color-primary);
+  border-radius: 9px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+              transform: 0.2s ease;
+              box-shadow: 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(26, 115, 232, 0.25);
+    }
+}
+
+
+
 /* Containers */
 .container {
   width: 100%;
@@ -190,4 +214,40 @@ body {
 .instagram-icon {
   width: 22px;
   fill: #fff;
+}
+
+/*----------------------------------------------------about page---------------------------------------------------------**/
+
+.about h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.about__img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 10px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+}
+.about__me {
+  margin-top: 20px;
+  padding: 24px 16px;
+}
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+    & p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--color-text);
+      max-width: 60ch;
+    }
 }
