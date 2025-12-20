@@ -59,7 +59,7 @@
       }
       .about__img {
         flex: 1;
-        max-width: 480px;
+        max-width: 350px;
       }
       .about__me {
         flex: 1;
@@ -74,7 +74,7 @@
         }
       }
       .about h2 {
-        margin-bottom: 12px;
+        display: none;
       }
 
       .btn {

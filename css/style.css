@@ -249,5 +249,7 @@ body {
       line-height: 1.7;
       color: var(--color-text);
       max-width: 60ch;
+      text-align: justify;
+      text-justify: inter-word;
     }
 }

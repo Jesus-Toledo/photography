@@ -48,4 +48,10 @@
       .hero__text {
         padding: 0 40px;
       }
+
+      .about__img {
+        max-width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+      }
 }
