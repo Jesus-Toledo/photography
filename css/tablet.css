@@ -5,7 +5,7 @@
 
     .hero {
         flex: 1;
-      }
+    }
       
       /* Ocultar menú hamburguesa y mostrar menú horizontal */
       .nav__toggle {
@@ -54,4 +54,6 @@
         margin-right: auto;
         margin-left: auto;
       }
+
+
 }
