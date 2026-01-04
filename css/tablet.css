@@ -55,5 +55,40 @@
         margin-left: auto;
       }
 
+      /* ----------------------- Contact Section - Tablet ------------------------------- */
 
-}
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .contact__card {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact__form {
+    padding: 2rem; /* Menos padding */
+  }
+  
+  .contact__form label {
+    margin-bottom: 0.8rem; /* Menos espacio entre campos */
+    font-size: 0.9rem; /* Texto más pequeño */
+  }
+  
+  .contact__form input,
+  .contact__form textarea {
+    padding: 10px 12px; /* Inputs más compactos */
+    font-size: 0.9rem;
+  }
+  .contact__form textarea {
+    min-height: 70px; /* Textarea más bajo */
+  }
+  
+  .contact__form .btn {
+    padding: 14px;
+    font-size: 1.05rem;
+  }
+
+    }
+    

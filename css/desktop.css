@@ -81,4 +81,77 @@
         padding: 12px 70px;
         align-self: center;
       }
+
+
+ /*---------------- contact section -------------------------**/
+ .contact {
+  padding: 3rem 0;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Card ajustada */
+.contact__card {
+  display: flex;
+  max-width: 900px; /* Reducido de 1000px */
+  height: 450px;    /* Reducido de 500px */
+  margin: 0 auto;
+}
+
+.contact__image {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.contact__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.contact__card:hover .contact__image img {
+  transform: scale(1.03);
+}
+
+/* Formulario compactado */
+.contact__form {
+  flex: 1;
+  padding: 2rem 2.5rem; /* Reducido de 3rem */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Reducir márgenes entre labels */
+.contact__form label {
+  margin-bottom: 1rem; /* Reducido de 1.8rem */
+}
+
+/* Reducir padding de inputs */
+.contact__form input,
+.contact__form textarea {
+  padding: 12px 15px; /* Reducido de 15px 18px */
+  font-size: 0.95rem;  /* Reducido de 1.1rem */
+  margin-top: 0.3rem;  /* Reducido el espacio entre label e input */
+}
+
+/* Reducir altura del textarea */
+.contact__form textarea {
+  min-height: 90px; /* Reducido de 120px */
+}
+
+/* Botón más compacto */
+.contact__form .btn {
+  padding: 12px; /* Reducido de 16px */
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
 }
