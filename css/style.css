@@ -83,73 +83,71 @@ body {
 }
 
 /* HEADER */
-.header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  z-index: 999;
-}
-
-.nav__container {
+.navbar {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 65px;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  color: #fff;
+  z-index: 10;
 }
 
 .logo {
-  font-size: 2.3rem;
-  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
-.nav__toggle {
+.menu-toggle {
+  font-size: 1.5rem;
   background: none;
   border: none;
+  color: white;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-.nav__toggle span {
-  font-size: 32px;
-  color: var(--white);
+  z-index: 20;
 }
 
-/* Mobile Nav */
-.nav {
-  position: fixed;     
-  top: 65px;
+/* Menú oculto en mobile */
+.nav-links {
+  position: absolute;
+  top: 100%;
   left: 0;
   width: 100%;
-  background: var(--color-text-light);
-  transform: translateY(-100%);
-  opacity: 0;
-  pointer-events: none;
-  transition: transform .3s ease, opacity .3s ease;
-  z-index: 998;
-  max-height: 0;
-  overflow: hidden;   
-  
-    & ul {
-      list-style: none;
-      padding: 20px;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    & a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
+  height: calc(100vh - 64px);
+  background-color: #1e1e1e;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.nav.open { 
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
- }
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    background-color: aqua;
+    color: #1e1e1e;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-3px);
+  }
+  & .active {
+    color: #2563eb;
+    font-weight: bold;
+    border-bottom: 2px solid #2563eb;
+  }
+}
+
+/* Clase que se activa con JS */
+.nav-links.active {
+  display: flex;
+}
 
 
 

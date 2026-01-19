@@ -3,36 +3,28 @@
         padding: 0 50px;
     }
 
+    .menu-toggle {
+      display: none;
+    }
+  
+    .nav-links {
+      position: static;
+      height: auto;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      background: none;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+      margin-left: 1.5rem;
+      padding: 0;
+    }
+
     .hero {
         flex: 1;
     }
-      
-      /* Ocultar menú hamburguesa y mostrar menú horizontal */
-      .nav__toggle {
-        display: none;
-      }
-      
-      .nav {
-        position: static;
-        max-height: none;
-        background: transparent;
-        width: auto;
-      }
-      
-      .nav ul {
-        display: flex;
-        gap: 30px;
-      }
-      
-      .nav a {
-        color: var(--white);
-        font-weight: 500;
-        transition: opacity 0.3s;
-      }
-      
-      .nav a:hover {
-        opacity: 0.8;
-      }
       
       /* Cambiar frase en tablet */
       .hero__quote.mobile,

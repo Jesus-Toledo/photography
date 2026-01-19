@@ -5,33 +5,34 @@
     .container {
         padding: 0;
     }
-    .nav{
-        position: static;
-        width: auto;
-        display: flex;
-        overflow: visible;
-        max-height: none;
-        justify-content: flex-end;
-        align-items: center;
-        background: none;
-        box-shadow: none;
-        padding: 0;
 
-        & ul {
-            display: flex;
-            gap: 30px;
+    /* Header*/
 
-            & li {
-                margin: 0;
-            }
-        }
+    .menu-toggle {
+      display: none;
     }
-    .nav__toggle {
-        display: none;
+  
+    .nav-links {
+      position: static;
+      height: auto;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      background: none;
     }
-    .hero {
-        flex: 1;
+  
+    .nav-links a {
+      font-size: 1rem;
+      margin-left: 1.5rem;
+      padding: 0.5rem 1.2rem;
+      transition: transform 0.3s ease;
+      border-radius: 8px;
+  
+      &:hover {
+        transform: translateY(-3px);
       }
+    }
+
       
       /* Cambiar frase en desktop */
       .hero__quote.mobile,
