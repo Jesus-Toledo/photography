@@ -1,158 +1,145 @@
+@media (min-width: 850px) {
+  .container {
+    padding: 0;
+  }
 
+  /* Header*/
 
+  .menu-toggle {
+    display: none;
+  }
 
-@media (min-width: 850px){
-    .container {
-        padding: 0;
+  .nav-links {
+    position: static;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    background: none;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    padding: 0.5rem 1.2rem;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+
+    &:hover {
+      transform: translateY(-3px);
     }
+  }
 
-    /* Header*/
+  /* Cambiar frase en desktop */
+  .hero__quote.mobile,
+  .hero__quote.tablet {
+    display: none;
+  }
 
-    .menu-toggle {
-      display: none;
+  .hero__quote.desktop {
+    display: block;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero__text {
+    max-width: 900px;
+  }
+
+  /*-------------------------------about page------------------------------**/
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+  }
+  .about__img {
+    flex: 1;
+    max-width: 350px;
+  }
+  .about__me {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__text {
+    gap: 18px;
+
+    & p {
+      max-width: 55ch;
     }
-  
-    .nav-links {
-      position: static;
-      height: auto;
-      width: auto;
-      display: flex;
-      flex-direction: row;
-      background: none;
-    }
-  
-    .nav-links a {
-      font-size: 1rem;
-      margin-left: 1.5rem;
-      padding: 0.5rem 1.2rem;
-      transition: transform 0.3s ease;
-      border-radius: 8px;
-  
-      &:hover {
-        transform: translateY(-3px);
-      }
-    }
+  }
+  .about h2 {
+    display: none;
+  }
 
-      
-      /* Cambiar frase en desktop */
-      .hero__quote.mobile,
-      .hero__quote.tablet {
-        display: none;
-      }
-      
-      .hero__quote.desktop {
-        display: block;
-        font-size: 2.5rem;
-        line-height: 1.2;
-      }
-      
-      .hero__text {
-        max-width: 900px;
-      }
+  .btn {
+    padding: 12px 70px;
+    align-self: center;
+  }
 
-      /*-------------------------------about page------------------------------**/
+  /*---------------- contact section -------------------------**/
+  .contact {
+    padding: 3rem 0;
+  }
 
-      .about {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-        align-items: center;
-      }
-      .about__img {
-        flex: 1;
-        max-width: 350px;
-      }
-      .about__me {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-      }
-      .about__text {
-        gap: 18px;
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
 
-        & p {
-          max-width: 55ch;
-        }
-      }
-      .about h2 {
-        display: none;
-      }
+  .contact__card {
+    display: flex;
+    max-width: 900px;
+    height: 450px;
+    margin: 0 auto;
+  }
 
-      .btn {
-        padding: 12px 70px;
-        align-self: center;
-      }
+  .contact__image {
+    display: block;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+  }
 
+  .contact__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
 
- /*---------------- contact section -------------------------**/
- .contact {
-  padding: 3rem 0;
-}
+  .contact__card:hover .contact__image img {
+    transform: scale(1.03);
+  }
+  .contact__form {
+    flex: 1;
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.contact h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2.5rem;
-}
+  .contact__form label {
+    margin-bottom: 1rem;
+  }
 
-/* Card ajustada */
-.contact__card {
-  display: flex;
-  max-width: 900px; /* Reducido de 1000px */
-  height: 450px;    /* Reducido de 500px */
-  margin: 0 auto;
-}
+  .contact__form input,
+  .contact__form textarea {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+  }
 
-.contact__image {
-  display: block;
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
-}
+  .contact__form textarea {
+    min-height: 90px;
+  }
 
-.contact__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.contact__card:hover .contact__image img {
-  transform: scale(1.03);
-}
-
-/* Formulario compactado */
-.contact__form {
-  flex: 1;
-  padding: 2rem 2.5rem; /* Reducido de 3rem */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Reducir márgenes entre labels */
-.contact__form label {
-  margin-bottom: 1rem; /* Reducido de 1.8rem */
-}
-
-/* Reducir padding de inputs */
-.contact__form input,
-.contact__form textarea {
-  padding: 12px 15px; /* Reducido de 15px 18px */
-  font-size: 0.95rem;  /* Reducido de 1.1rem */
-  margin-top: 0.3rem;  /* Reducido el espacio entre label e input */
-}
-
-/* Reducir altura del textarea */
-.contact__form textarea {
-  min-height: 90px; /* Reducido de 120px */
-}
-
-/* Botón más compacto */
-.contact__form .btn {
-  padding: 12px; /* Reducido de 16px */
-  font-size: 1rem;
-  font-weight: 500;
-  margin-top: 0.5rem;
-}
-
+  .contact__form .btn {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
 }

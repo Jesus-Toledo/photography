@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Toledoplay</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tablet.css">
-    <link rel="stylesheet" href="css/desktop.css">
-</head>
-<body>
-  <header class="navbar">
-    <div class="logo">MiLogo</div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">MiLogo</div>
 
-    <button class="menu-toggle" id="menu-toggle">☰</button>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
 
-    <nav class="nav-links" id="nav-links">
-      <a href="#" class="active">Inicio</a>
-      <a href="#">Servicios</a>
-      <a href="#">Proyectos</a>
-      <a href="#">Contacto</a>
-    </nav>
-  </header>
-  
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
     <!-- HERO -->
-    <main class="main">
+    <main class="main" id="home">
       <section class="hero">
         <picture class="hero__media">
-          <source srcset="images/hero-desktop.jpg" media="(min-width: 1024px)">
-          <source srcset="images/hero-tablet.jpg" media="(min-width: 768px)">
-          <img src="images/hero-mobile.jpg" alt="Fotografía profesional" class="hero__img">
+          <source
+            srcset="images/hero-desktop.jpg"
+            media="(min-width: 1024px)"
+          />
+          <source srcset="images/hero-tablet.jpg" media="(min-width: 768px)" />
+          <img
+            src="images/hero-mobile.jpg"
+            alt="Fotografía profesional"
+            class="hero__img"
+          />
         </picture>
-    
+
         <div class="container hero__content">
           <div class="hero__text">
-            <h2 class="hero__quote mobile">"Every moment tells its own story."</h2>
-            <h2 class="hero__quote tablet">"Light writes what words cannot."</h2>
-            <h2 class="hero__quote desktop">"Every photograph is a story suspended in time."</h2>
+            <h2 class="hero__quote mobile">
+              "Every moment tells its own story."
+            </h2>
+            <h2 class="hero__quote tablet">
+              "Light writes what words cannot."
+            </h2>
+            <h2 class="hero__quote desktop">
+              "Every photograph is a story suspended in time."
+            </h2>
           </div>
         </div>
       </section>
     </main>
 
-  
     <footer class="footer">
-      <a href="https://www.instagram.com/tu_usuario" 
-         target="_blank" class="instagram__btn">
+      <a
+        href="https://www.instagram.com/tu_usuario"
+        target="_blank"
+        class="instagram__btn"
+      >
         <svg viewBox="0 0 448 512" class="instagram-icon">
-          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 
+          <path
+            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 
           114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 
           141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 
           74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 
@@ -76,11 +104,12 @@
           132.3 9c19.6 7.8 34.7 23 
           42.5 42.6 11.7 29.5 9 
           99.5 9 132.3s2.7 102.8-9 
-          132.4z"/>
+          132.4z"
+          />
         </svg>
       </a>
     </footer>
-  
+
     <script src="javascript/menu.js"></script>
   </body>
 </html>

@@ -1,86 +1,65 @@
-@media (min-width: 700px){
-    .container {
-        padding: 0 50px;
-    }
+@media (min-width: 700px) {
+  .container {
+    padding: 0 50px;
+  }
 
-    .menu-toggle {
-      display: none;
-    }
-  
-    .nav-links {
-      position: static;
-      height: auto;
-      width: auto;
-      display: flex;
-      flex-direction: row;
-      background: none;
-    }
-  
-    .nav-links a {
-      font-size: 1rem;
-      margin-left: 1.5rem;
-      padding: 0;
-    }
+  .hero {
+    flex: 1;
+  }
 
-    .hero {
-        flex: 1;
-    }
-      
-      /* Cambiar frase en tablet */
-      .hero__quote.mobile,
-      .hero__quote.desktop {
-        display: none;
-      }
-      
-      .hero__quote.tablet {
-        display: block;
-        font-size: 2rem;
-      }
-      
-      .hero__text {
-        padding: 0 40px;
-      }
+  /* Cambiar frase en tablet */
+  .hero__quote.mobile,
+  .hero__quote.desktop {
+    display: none;
+  }
 
-      .about__img {
-        max-width: 450px;
-        margin-right: auto;
-        margin-left: auto;
-      }
+  .hero__quote.tablet {
+    display: block;
+    font-size: 2rem;
+  }
 
-      /* ----------------------- Contact Section - Tablet ------------------------------- */
+  .hero__text {
+    padding: 0 40px;
+  }
+
+  .about__img {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* ----------------------- Contact Section - Tablet ------------------------------- */
 
   .contact h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
-  
+
   .contact__card {
     max-width: 600px;
     margin: 0 auto;
   }
-  
+
   .contact__form {
-    padding: 2rem; /* Menos padding */
+    padding: 2rem;
   }
-  
+
   .contact__form label {
-    margin-bottom: 0.8rem; /* Menos espacio entre campos */
-    font-size: 0.9rem; /* Texto más pequeño */
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
   }
-  
+
   .contact__form input,
   .contact__form textarea {
-    padding: 10px 12px; /* Inputs más compactos */
+    padding: 10px 12px;
     font-size: 0.9rem;
   }
   .contact__form textarea {
-    min-height: 70px; /* Textarea más bajo */
+    min-height: 70px;
   }
-  
+
   .contact__form .btn {
     padding: 14px;
     font-size: 1.05rem;
   }
-
-    }
-    
+}
